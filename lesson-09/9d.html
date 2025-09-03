@@ -6,7 +6,16 @@
   <title>Document</title>
 </head>
 <body>
-  
+  <!--
+    <input placeholder="Name" class="js-name-input">
+    <button onclick="
+      const inputElement = document.querySelector('.js-name-input');
+      document.querySelector('.js-message')
+        .innerHTML = `Your name is: ${inputElement.value}`;
+    ">Submit</button>
+
+    <p class="js-message"></p>
+  -->
   <input type="text" class="js-name-input">
   <button onclick="
     nameGet();
@@ -19,17 +28,6 @@
       document.querySelector('.js-message')
         .innerHTML = `Your name is: ${name}`;
     }
-
-    /*
-    <input placeholder="Name" class="js-name-input">
-    <button onclick="
-      const inputElement = document.querySelector('.js-name-input');
-      document.querySelector('.js-message')
-        .innerHTML = `Your name is: ${inputElement.value}`;
-    ">Submit</button>
-
-    <p class="js-message"></p>
-    */
   </script>
 </body>
 </html>
