@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <input type="text" class="js-name-input">
+  <button onclick="
+    nameGet();
+  ">Submit</button>
+  <p class="js-message"></p>
+
+  <script>
+    function nameGet() {
+      const name = document.querySelector('.js-name-input').value;
+      document.querySelector('.js-message')
+        .innerHTML = `Your name is: ${name}`;
+    }
+
+    /*
+    <input placeholder="Name" class="js-name-input">
+    <button onclick="
+      const inputElement = document.querySelector('.js-name-input');
+      document.querySelector('.js-message')
+        .innerHTML = `Your name is: ${inputElement.value}`;
+    ">Submit</button>
+
+    <p class="js-message"></p>
+    */
+  </script>
+</body>
+</html>
