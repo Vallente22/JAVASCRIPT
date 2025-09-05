@@ -1,0 +1,29 @@
+body {
+  background-color: black;
+}
+
+.result-text {
+  color: white;
+  font: 20px Arial;
+  height: 100%;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.button-style {
+  background-color: rgb(51,50,50);
+  color: white;
+  border: none;
+  border-radius: 100%;
+  height: 50px;
+  width: 50px;
+  font: 20px Arial;
+}
+
+.operators {
+  background-color: rgb(252,160,11);
+}
+
+.clear-button {
+  font-size: 15px;
+}
