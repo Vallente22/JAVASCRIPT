@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!--  12c & 12d
+  <button class="js-button" onclick="
+      updateButton();
+    ">Start</button>
+  -->
+
+  <!--    12e
+  <button class="js-button" onclick="
+      updateText();
+    ">Add to Cart</button>
+  <p class="js-text"></p>
+  -->
+
+  <!--    12f
+  <button onclick="
+      updateText();
+    ">Add to Cart</button>
+  <p class="js-text"></p>
+  -->
+
+  <!--    12h
+  <button onclick="
+    updateMessages('add');
+    ">Add</button>
+  <button onclick="
+    updateMessages('remove');
+  ">Remove</button>
+  -->
+
+  <!--    12i
+  <button onclick="
+    messages++;
+    updateNotification();
+    ">Add</button>
+  <button onclick="
+    messages--;
+    updateNotification();
+  ">Remove</button>
+  -->
+  
+  <script>
+    /*
+    //    12c
+    const updateButton = () => {
+      const button = document.querySelector('.js-button');
+
+      setTimeout(() => {
+        button.innerHTML = 'Finished';
+      }, 1000);
+    };
+    */
+
+    /*
+    //    12d
+    const updateButton = () => {
+      const button = document.querySelector('.js-button');
+
+      button.innerHTML = 'Loading...';
+      setTimeout(() => {
+        button.innerHTML = 'Finished';
+      }, 1000);
+    };
+    */
+
+    /*
+    //    12e
+    function updateText() {
+      const text = document.querySelector('.js-text');
+
+      text.innerHTML = 'Added';
+      setTimeout(() => {
+        text.innerHTML = '';
+      }, 2000);
+    }
+    */
+
+    /*
+    //    12f
+    let timer;
+    const updateText = () => {
+      const text = document.querySelector('.js-text');
+
+      text.innerHTML = 'Added';
+
+      clearTimeout(timer);
+
+      timer = setTimeout(() => {
+        text.innerHTML = '';
+      }, 2000);
+    }
+    */
+
+    /*
+    //    12g
+    setInterval(() => {
+      document.title = '(2) New messages';
+    }, 1000);
+    setInterval(() => {
+      document.title = 'App';
+    }, 2000)
+
+    //other example of 12g
+    setInterval(() => {
+        if (document.title === 'App') {
+          document.title = '(2) New messages';
+        } else {
+          document.title = 'App';
+        }
+      }, 1000);
+    */
+
+    /*
+    //    12h
+    let messages = 2;
+    const updateMessages = value => {
+      if (value === 'add') {
+        messages++;
+      }
+      if (value === 'remove') {
+        messages--;
+      }
+    }
+
+    setInterval(() => {
+      if (document.title === 'App') {
+        document.title = `(${messages}) New messages`;
+      } else {
+        document.title = 'App';
+      }
+    }, 1000);
+    */
+
+    /*
+    //    12i
+    let messages = 2;
+    let interval;
+
+    function updateNotification() {
+      if (messages > 0) {
+        startInterval();
+      } else {
+        stopInterval();
+      }
+    }
+
+    function stopInterval() {
+      clearInterval(interval);
+      document.title = 'App';
+    }
+
+    function startInterval() {
+      clearInterval(interval);
+
+      interval = setInterval(() => {
+        if (document.title === 'App') {
+          document.title = `(${messages}) New messages`;
+        } else {
+          document.title = 'App';
+        }
+      }, 1000);
+    }
+
+    startInterval();
+    */
+  </script>
+</body>
+</html>
