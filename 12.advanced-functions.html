@@ -64,13 +64,34 @@
         'make dinner',
         'wash dishes',
         'watch youtube'
-      ].forEach(function(value, index) {
+      ].forEach((value, index) => {
         if(value === 'wash dishes') {
           return;
         }
         console.log(index);
         console.log(value);
       });
+
+      const regularFunction = function(param, param2) {
+        console.log('hello');
+        return 5;
+      };
+      
+      //parameters in arrow function is always placed first before the 
+      //function itself or => 
+      const arrowFunction = (param, param2) => { 
+        console.log('hello');
+        return 5;
+      };
+      arrowFunction();
+
+      const oneParam = param => { //dont need to use () if using one 
+        console.log(param + 1);   //parameter only
+      };
+      oneParam(2);
+
+      const oneLine = () =>  2 + 3; //one line arrow function
+      console.log(oneLine());       //needs () when printing for value
     </script>
   </body>
 </html>
