@@ -11,7 +11,7 @@ renderTodoList();
 function renderTodoList() {
   let todoListHTML = '';
 
-  todoList.forEach(function(todoObject, index) {
+  todoList.forEach((todoObject, index) => {
     const { name, dueDate } = todoObject;
     const html = `
       <div>${name}</div>
@@ -40,7 +40,7 @@ function addTodo() {
     //dueDate: dueDate, - only works if the property and variable name are the same
     name, 
     dueDate
-});
+  });
 
   inputElement.value = '';
 
