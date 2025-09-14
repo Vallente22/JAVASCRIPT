@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!--    12c & 12d
+  <button class="js-button">Start</button>
+  -->
+
+  <!--    12e
+  <button class="js-button">Add to Cart</button>
+  <p class="js-text"></p>
+  -->
+
+  <!--
+  <button class="js-button">Add to Cart</button>
+  <p class="js-text"></p>
+  -->
+
+  <button class="js-add-button">Add</button>
+  <button class="js-remove-button">Remove</button>
+
+
+  <script>
+    /*
+    //    12c
+    document.querySelector('.js-button')
+      .addEventListener('click', () => {
+        const button = document.querySelector('.js-button');
+
+        button.innerHTML = 'Loading...'; //   12d
+
+        setTimeout(() => {
+          button.innerHTML = 'Finished';
+        }, 1000);
+      });
+    */
+
+
+    /*
+    //    12e
+    document.querySelector('.js-button')
+      .addEventListener('click', () => {
+        const text = document.querySelector('.js-text');
+
+        text.innerHTML = 'Added';
+
+        setTimeout(function() {
+          text.innerHTML = '';
+        }, 2000);
+      })
+    */
+
+    /*
+    //    12f
+    let timer;
+    document.querySelector('.js-button')
+      .addEventListener('click', () => {
+        const text = document.querySelector('.js-text');
+
+        text.innerHTML = 'Added';
+
+        clearTimeout(timer);
+
+        timer = setTimeout(function() {
+          text.innerHTML = '';
+        }, 2000);
+      })
+    */
+      
+    let messages = 2;
+    doc
+    function updateMessages(value) {
+      if (value === 'add') {
+        messages++;
+      }
+      if (value === 'remove') {
+        messages--;
+      }
+    }
+
+    setInterval(function() {
+      if (document.title === 'App') {
+        document.title = `(${messages}) New messages`;
+      } else {
+        document.title = 'App';
+      }
+    }, 1000);
+    
+    
+  </script>
+</body>
+</html>
