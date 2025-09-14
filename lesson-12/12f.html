@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button onclick="
+      updateText();
+    ">Add to Cart</button>
+  <p class="js-text"></p>
+
+  <script>
+    let timer;
+    function updateText() {
+      const text = document.querySelector('.js-text');
+
+      text.innerHTML = 'Added';
+
+      clearTimeout(timer);
+
+      timer = setTimeout(function() {
+        text.innerHTML = '';
+      }, 2000);
+    }
+  </script>
+</body>
+</html>
