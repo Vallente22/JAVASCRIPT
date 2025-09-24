@@ -656,5 +656,25 @@ const products = [
       "apparel",
       "mens"
     ]
+  },
+  {
+    id: "id1",
+    image: "images/products/backpack.jpg",
+    name: "Secure Travel Backpack",
+    rating: {
+      stars: 4.5,
+      count: 56,
+    },
+    priceCents: 2075
+  },
+  {
+    id: "id2",
+    image: "images/products/umbrella.jpg",
+    name: "High Quality Automatic Umbrella",
+    rating: {
+      stars: 4,
+      count: 3543
+    },
+    priceCents: 1155
   }
 ];
